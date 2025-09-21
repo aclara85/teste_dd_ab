@@ -4,7 +4,7 @@ Essa prática tem 10 pontos. Pontue a atividade ao final de acordo com o que foi
 
 Faça um relatório de um parágrafo explicando o que foi feito, o que foi aprendido e as dificuldades encontradas.
 
-## Manipulando localmente (1 ponto)
+## Manipulando localmente (1 ponto)- feito
 
 - Criar um nova pasta: `mkdir nome-da-pasta`
 - Entrar na pasta criada: `cd nome-da-pasta`
@@ -16,7 +16,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
   - Coloque o vscode para salvar automaticamente na opção auto save
   - Control , e escolher auto save (after delay)
 
-## Primeiro fluxo de trabalho (1 ponto)
+## Primeiro fluxo de trabalho (1 ponto)- feito
 
 - Adicionar o arquivo ao stage: `git add nome-do-arquivo.extensão`
 - Fazer um commit: `git commit -m "Mensagem do commit"`
