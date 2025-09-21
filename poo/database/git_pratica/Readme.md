@@ -51,7 +51,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
 - Alterar algo no repositório via interface web do github
 - Puxar as modificações para o codespace utilizando `git pull`
 
-## Criando um conflito (2 pontos)
+## Criando um conflito (2 pontos) g
 
 - Alterar um arquivo pela interface web do github e fazer commit
 - Alterar o mesmo arquivo no codespace
