@@ -32,7 +32,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
 - Faça o restore também pela interface do vscode
   - Clicando no botão `Discard Changes` no vscode
 
-## Olhando o histórico (1 ponto)
+## Olhando o histórico (1 ponto) feito
 
 - Fazer uma alteração e salvar via vscode
 - Ver histórico de commits: `git log`
