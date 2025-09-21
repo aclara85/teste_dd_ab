@@ -42,7 +42,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
 - Voltar para a versão mais recente
   - `git checkout main`
 
-## Trabalhando remotamente (1 ponto)
+## Trabalhando remotamente (1 ponto) -fazendo alteração na interface para puxar no local
 
 - Criar um repositório novo no github, inicializando ele com um readme.md
 - Clicar em criar codespace
