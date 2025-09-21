@@ -25,7 +25,7 @@ Faça um relatório de um parágrafo explicando o que foi feito, o que foi apren
   - `git config --global user.email "email"`
 - Faça também o add e o commit pela interface do vscode
 
-## Desfazendo mudanças (1 ponto)
+## Desfazendo mudanças (1 ponto) feito
 
 - Fazer uma mudança no arquivo e voltar para versão do commit
   - `git restore nome-do-arquivo.extensão`
