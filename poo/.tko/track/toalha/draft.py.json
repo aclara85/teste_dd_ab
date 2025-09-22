@@ -22,8 +22,23 @@
         },
         {
             "label": "2025-09-16_20-11-47",
-            "content": "class Towel: \n    def __init__(self):\n        self.color=\"red\"\n        self.size=\"p\"\n        self.wetness=\"0\"\n\ntowel = Towel()\nprint(towel.color)\ntowel.color=\"white\"\nprint(towel.color)\nprint(towel.size)\nprint(towel.wetness)",
+            "content": "@@ -32,44 +32,10 @@\n self\n-, color:str, size: str): #construtor\n+):\n %0A   \n@@ -53,20 +53,14 @@\n olor\n-: str= color\n+=%22red%22\n %0A   \n@@ -77,20 +77,12 @@\n size\n-: str = size\n+=%22p%22\n %0A   \n@@ -102,751 +102,122 @@\n ness\n-: int = 0%0A%0A        def dry(self, amount: int)-%3E None: %0A            self.wetness += amount%0A            if self.wetness %3E= self.getMaxWetness():%0A                print(%22Toalha encharcada%22)%0A                self.wetness = self.getMaxWetness()%0A    %0A%0A        def getMaxWetness(self) -%3E int:%0A            if self.size == %22p%22:%0A                return 10%0A            if self .size == %22m%22:%0A                return 20       %0A            if self.size == %22g%22:%0A                return 30%0A            return 0 %0A        %0A        def __str__(self) -%3E str:%0A            return f%22Cor: %7Bs\n+=%220%22%0A%0Atowel = Towel()%0Aprint(towel.color)%0Atowel.color=%22white%22%0Aprint(tow\n el\n-f\n .color\n-%7D, Tam:%7Bself.size%7D, Umidade:%7Bself.wetness%7D%22%0A        %0A%0A        doguito= Towel(%22velha%22, %22m%22)   %0A        print(doguito)%0A        doguito.dry(3)%0A        print(doguito)%0A        %0A  %0A%0A\n+)%0Aprint(towel.size)%0Aprint(towel.wetness)\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-09-22_16-03-39",
+            "content": "@@ -884,79 +884,8 @@\n to)%0A\n-        doguito.dry(15)%0A        doguito.dry(10)%0A        print(doguito)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-22_16-04-31",
+            "content": "@@ -157,16 +157,20 @@\n nt = 0%0A%0A\n+    \n     def \n@@ -387,76 +387,19 @@\n ss()\n-%0A%0A    def wringOut(self)-%3E None:%0A            self.wetness = 0\n %0A    %0A%0A\n+    \n     \n@@ -642,24 +642,28 @@\n 0 %0A        %0A\n+    \n     def __st\n@@ -771,16 +771,24 @@\n       %0A%0A\n+        \n doguito=\n@@ -811,16 +811,24 @@\n %22m%22)   %0A\n+        \n print(do\n@@ -826,32 +826,40 @@\n  print(doguito)%0A\n+        \n doguito.dry(3)%0Ap\n@@ -857,16 +857,24 @@\n .dry(3)%0A\n+        \n print(do\n@@ -880,16 +880,24 @@\n oguito)%0A\n+        \n doguito.\n@@ -904,16 +904,24 @@\n dry(15)%0A\n+        \n doguito.\n@@ -928,16 +928,24 @@\n dry(10)%0A\n+        \n print(do\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-09-22_16-20-15",
+            "content": "class Towel: \n    def __init__(self, color:str, size: str): #construtor\n        self.color: str= color\n        self.size: str = size\n        self.wetness: int = 0\n\n    def dry(self, amount: int)-> None: \n            self.wetness += amount\n            if self.wetness >= self.getMaxWetness():\n                print(\"Toalha encharcada\")\n                self.wetness = self.getMaxWetness()\n\n    def wringOut(self)-> None:\n            self.wetness = 0\n    \n\n    def getMaxWetness(self) -> int:\n            if self.size == \"p\":\n                return 10\n            if self .size == \"m\":\n                return 20       \n            if self.size == \"g\":\n                return 30\n            return 0 \n        \n    def __str__(self) -> str:\n            return f\"Cor: {self.color}, Tam:{self.size}, Umidade:{self.wetness}\"\n        \n\ndoguito= Towel(\"velha\", \"m\")   \nprint(doguito)\ndoguito.dry(3)\nprint(doguito)\ndoguito.dry(15)\ndoguito.dry(10)\nprint(doguito)\n        \n  \n\n",
+            "lines": "39"
         }
     ]
 }
