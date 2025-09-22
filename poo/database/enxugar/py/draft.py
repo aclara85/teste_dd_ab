@@ -24,7 +24,7 @@ class Towel:
             return 0 
         
     def __str__(self) -> str:
-            return f"Cor: {self.color}, Tam:{self.size}, Umidade:{self.wetness}"
+            return f"Cor: {self.color}, Tamanho:{self.size}, Umidade:{self.wetness}"
         
 
 def main():
@@ -35,12 +35,15 @@ def main():
 
         if args[0] == "end":
             break   
-        elif args[0] == "new":
+        elif args[0] == "criar":
              color = args[1]
              size = args[2]    
              toalha = Towel(color, size)
-        elif args[0] == "show":
+        elif args[0] == "mostrar":
             print(toalha)
+        
+        elif args[0] == "seca":
+            print("sim" if toalha.dry() else "não")
         elif args[0] == "dry": #amout
             amount:int = int(args[1])
             toalha.dry(amount)
