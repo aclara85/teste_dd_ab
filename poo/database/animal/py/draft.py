@@ -1,48 +1,55 @@
 class Animal:
-    def __init__(self, tipo: str, som: str):
-        self.tipo: str = tipo
-        self.som: str = som
-        self.idade: int = 0
+    def __init__(self, specie: str, sound: str):
+        self.specie: str = specie
+        self.sound: str = sound
+        self.age: int = 0
 
     def __str__(self) -> str:
-        return f"{self.tipo}:{self.idade}:{self.som}"
+        return f"{self.specie}:{self.age}:{self.sound}"
     
-    def envelhecer(self,anos: int) -> None: 
-        if self.idade == 4:
-            print(f"aviso: {self.tipo} já morreu")
+    def ageBy(self,increment: int) -> None: 
+        if self.age == 4:
+            print(f"warning: {self.specie} morreu")
             return
-        self.idade += anos
-        if self.idade >= 4:
-            self.idade = 4
-            print(f"aviso: {self.tipo} morreu")
+        self.age += increment
+        if self.age >= 4:
+            self.age = 4
+            print(f"warning: {self.specie} morreu")
 
-    def emitir_som(self) -> str:
-        if self.idade == 0:
-            return "_ _ _"
-        elif self.idade in (1, 2, 3):
-            return self.som
-        elif self.idade ==4:
-            return "Rip"
+    def makeSound(self) -> str:
+        if self.age == 0:
+            return "---"
+        if self.age == 1:
+            return self.sound
+        if self.age == 2:
+            return self.sound
+        if self.age == 3:
+            return self.sound
+        if self.age == 4:
+            return "RIP"
         
-    def main():
-        bicho = Animal = Animal ("", "")
-        while True:
-            comando: str = input()
-            print("$" + comando)
-            partes: list[str] = comando.split(" ")
+def main():
+    animal: Animal = Animal ("", "")
+    while True:
+        
+        line = input().strip()
+        print("$" + line)
+        args: list[str] = line.split(" ")
 
-            if partes[0] == "end":
+        if args[0] == "end":
                 break
-            elif partes[0] == "init":
-                tipo: str = partes [1]
-                som: str = partes [2]
-                bicho = Animal (tipo, som)
-            elif partes[0] == "show":
-                print(bicho)
-            elif partes[0] == "grow":
-                anos: int = int(partes[1])
-                bicho.envelhecer(anos)
-            elif partes[0] == "noise":
-                print(bicho.emitir_som())
+        if args[0] == "init":
+            specie:str = args [1]
+            sound:str = args [2]
+            animal = Animal (specie, sound)
+        if args[0] == "show":
+            print(animal)
+        if args[0] == "grow":
+            increment: int = int(args[1])
+            animal.ageBy(increment)
+        if args[0] == "noise":
+            print (animal.makeSound())
+
+if __name__ == "__main__":
     main()
             
