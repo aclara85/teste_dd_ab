@@ -14,3 +14,27 @@
 2025-10-04 19:29:29, EXEC, v:1, k:animal, mode:FULL, rate:100
 2025-10-04 19:30:01, MOVE, v:1, k:animal, mode:BACK
 2025-10-04 19:34:17, SELF, v:1, k:animal, rate:100, iagen:chatgpt, alone:9, study:4
+2025-10-04 20:33:49, MOVE, v:1, k:calculadora, mode:DOWN
+2025-10-04 20:33:51, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 20:43:15, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:14
+2025-10-04 21:08:19, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:08:35, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:08:38, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-04 21:08:40, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-04 21:10:59, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:11:53, EXEC, v:1, k:calculadora, mode:FREE
+2025-10-04 21:14:35, EXEC, v:1, k:calculadora, mode:FREE
+2025-10-04 21:19:35, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:19:37, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:62
+2025-10-04 21:22:27, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:22:50, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:22:51, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-04 21:28:49, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:29:36, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:29:37, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-04 21:34:15, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:34:37, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:34:38, EXEC, v:1, k:calculadora, mode:FULL, rate:9
+2025-10-04 21:44:29, EXEC, v:1, k:calculadora, mode:FREE, size:62
+2025-10-04 21:45:59, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:46:38, MOVE, v:1, k:calculadora, mode:PICK
