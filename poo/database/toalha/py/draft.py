@@ -1,59 +1,71 @@
 class Towel:
-    def __init__(self, color: str, size: str):
-        self.color: str = color
-        self.size: str = size
-        self.wetness: int = 0
-
-    def dry(self, amount: int) -> None:
-        self.wetness += amount
-        if self.wetness >= self.isMaxWetness():
-            self.wetness = self.isMaxWetness()
-            print("toalha encharcada")
-
-    def isDry(self):
-        return self.wetness == 0
-
-    def wringOut(self):
-        self.wetness = 0
-
-    def isMaxWetness(self) -> int:
-        if self.size == "P":
-            return 10
-        if self.size == "M":
-            return 20
-        if self.size == "G":
-            return 30
-        return 0
+    def __init__(self, size: str, color: str) -> None:
+        self.size: str = size.upper();
+        self.color: str = color;
+        self.wetness: int = 0;
 
     def __str__(self) -> str:
-        return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
+        return f"color: {self.color}, size: {self.size}, wetness: {self.wetness}";
 
+    def getMaxWetness (self) -> int:
+        if self.size == "P":
+            return 10;
+        if self.size == "M":
+            return 20;
+        if self.size == "G":
+            return 30;
+        return 0
 
-def main():
-    towel: Towel = Towel("", "")
+    def dry (self, amount: int) -> None:
+        self.wetness += amount;
+        if self.wetness >= self.getMaxWetness():
+            print('A toalha está encharcada');
+            self.wetness = self.getMaxWetness();
+
+    def isDry (self) -> bool:
+        return self.wetness == 0;
+
+    def wringOut (self) -> None:
+        self.wetness = 0;
+
+    def show (self):
+        print(self);
+
+# Contruindo função Main()
+
+def main ():
+    towel: Towel = Towel("", "");
+
     while True:
+        line = input();
+        args: list[str] = line.split(" ");
+        
+        if args[0] == "quit":
+            break;
+        
+        elif args[0] == "new":
+            print(f"${line}");
+            towel.color = args[1];
+            towel.size = args[2];
 
-        line: str = input()
-        print("$" + line)
-        args: list[str] = line.split(" ")
+        elif args[0] == "dry":
+            print(f"${line}");
+            towel.dry(int(args[1]));
+        
+        elif args[0] == "isDry":
+            print(f"${line}");
+            print(towel.isDry());
+        
+        elif args[0] == "show":
+            print(f"${line}");
+            towel.show();
+        
+        elif args[0] == "wringOut":
+            print(f"${line}");
+            towel.wringOut();
 
-        if args[0] == "end":
-            break
-        elif args[0] == "criar":
-            color: str = args[1]
-            size: str = args[2]
-            towel = Towel(color, size)
-        elif args[0] == "seca":
-            print("sim" if towel.isDry() else "nao")
-        elif args[0] == "torcer":
-            towel.wringOut()
-        elif args[0] == "enxugar":
-            amount: int = int(args[1])
-            towel.dry(amount)
-        elif args[0] == "mostrar":
-            print(towel)
         else:
-            print("fail: comando não encontrado")
+            print(f"${line}");
+            print(f"Error: \"{args[0]}\" não encontrado");
 
-
-main()
+main();

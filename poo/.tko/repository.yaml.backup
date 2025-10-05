@@ -9,6 +9,7 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
+  toalha: '{rate:100, guide:fiz_em_aula, alone:10}'
   animal: '{rate:100, iagen:chatgpt, alone:9, study:4}'
   carro: '{rate:100, alone:10, study:1}'
   calculadora: '{rate:100, alone:9, study:2}'

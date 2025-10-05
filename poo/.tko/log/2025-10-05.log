@@ -61,3 +61,6 @@
 2025-10-05 13:33:37, EXEC, v:1, k:toalha, mode:LOCK, rate:0
 2025-10-05 13:34:36, EXEC, v:1, k:toalha, mode:FREE, size:55
 2025-10-05 13:35:27, EXEC, v:1, k:toalha, mode:FREE, size:59
+2025-10-05 13:41:22, EXEC, v:1, k:toalha, mode:FREE, size:71
+2025-10-05 13:43:10, SELF, v:1, k:toalha, rate:100, guide:fiz_em_aula
+2025-10-05 13:43:23, SELF, v:1, k:toalha, rate:100, guide:fiz_em_aula, alone:10
