@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-05_12-22-09",
+            "content": "@@ -560,18 +560,18 @@\n il: nao \n-te\n+ha\n  ninguem\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-05_12-24-05",
+            "content": "@@ -562,17 +562,16 @@\n : nao te\n-m\n  ninguem\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-05_12-24-46",
+            "content": "@@ -552,34 +552,35 @@\n rint(%22fail: nao \n-ha\n+tem\n  ninguem no carr\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-05_12-28-04",
+            "content": "class Carro:\n    def __init__(self, passageiros: int):\n        self.passageiros: int = 0\n        self.gas: int = 0\n        self.km: int = 0\n\n    def __str__(self):\n        return f\"pass: {self.passageiros}, gas: {self.gas}, km: {self.km}\"\n\n    def enter(self) -> None:\n        self.passageiros += 1\n        if self.passageiros > self.passMax():\n            print(\"fail: limite de pessoas atingido\")\n            self.passageiros = self.passMax()\n\n    def leave(self) -> None:\n        self.passageiros -= 1\n        if self.passageiros < 0:\n            print(\"fail: nao ha ninguem no carro\")\n            self.passageiros = 0\n\n    def fuel(self, increment: int) -> None:\n        self.gas += increment\n        if self.gas > self.gasMax():\n            self.gas = self.gasMax()\n\n    def drive(self, increment: int) -> None:\n        if self.passageiros == 0:\n            print(\"fail: nao ha ninguem no carro\")\n            return\n        if self.gas == 0:\n            print(\"fail: tanque vazio\")\n            return\n        elif self.gas < increment:\n            print(f\"fail: tanque vazio apos andar {self.gas} km\")\n            self.km += self.gas \n            self.gas = 0\n        else:\n            self.km += increment\n            self.gas -= increment\n            \n        \n    def passMax(self) -> int:\n        return 2\n    \n    def gasMax(self) -> int:\n        return 100\n\ndef main():\n    carro = Carro(0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"enter\":\n            carro.enter()\n        elif args[0] == \"leave\":\n            carro.leave()\n        elif args[0] == \"fuel\":\n            increment: int = int(args[1])\n            carro.fuel(increment)\n        elif args[0] == \"drive\":\n            increment: int = int(args[1])\n            carro.drive(increment)\n        elif args[0] == \"show\":\n            print(carro)\n\nmain()",
+            "lines": "70"
+        }
+    ]
+}
