@@ -38,3 +38,8 @@
 2025-10-04 21:44:29, EXEC, v:1, k:calculadora, mode:FREE, size:62
 2025-10-04 21:45:59, MOVE, v:1, k:calculadora, mode:PICK
 2025-10-04 21:46:38, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:49:11, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:54:11, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-04 21:54:14, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:62
+2025-10-04 21:55:16, MOVE, v:1, k:calculadora, mode:BACK
+2025-10-04 21:55:45, SELF, v:1, k:calculadora, rate:100, alone:9, study:2

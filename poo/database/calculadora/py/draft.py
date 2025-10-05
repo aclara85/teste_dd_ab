@@ -24,7 +24,7 @@ class Calculadora:
         if self.battery == 0:
             print("fail: bateria insuficiente")
         elif denominator == 0:
-                print("fail: divisão por zero")
+                print("fail: divisao por zero")
                 self.battery -= 1
         else:
             self.display = numerator / denominator

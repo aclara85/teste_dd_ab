@@ -10,6 +10,7 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   animal: '{rate:100, iagen:chatgpt, alone:9, study:4}'
+  calculadora: '{rate:100, alone:9, study:2}'
 flags:
   quests: 0
   tracks: 0
